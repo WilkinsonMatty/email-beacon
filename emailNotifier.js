@@ -1,8 +1,11 @@
-
+winston = require('winston')
 
 module.exports = class EmailNotifier{
 
     notify(emailAddress, message){
-        console.log(`sending email to ${emailAddress}`,`Message: ${message}`)
+        winston.info(`_________________________________________________________________`)
+        winston.info(`sending email to ${emailAddress}`)
+        winston.info(`Message: ${message}`)
+        winston.info(`_________________________________________________________________`)
     }
 }

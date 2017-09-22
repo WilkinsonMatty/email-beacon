@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/WilkinsonMatty/email-beacon#readme",
   "dependencies": {
+    "blankgif": "^0.1.0",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.4",
     "express-fingerprint": "^1.1.1",
     "fingerprintjs2": "^1.5.1",
-    "redis-mock": "^0.20.0"
+    "redis-mock": "^0.20.0",
+    "winston": "^2.3.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",

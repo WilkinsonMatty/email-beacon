@@ -6,7 +6,9 @@ var http = require('http');
 var fs = require('fs');
 var config = require('./config');
 var trackingRoutes = require('./tracking-routes')
+var winston = require('winston')
 
+winston.level='info'
 
 app.get('/',(request,response)=>{
     response.send(`
