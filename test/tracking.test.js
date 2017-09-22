@@ -186,7 +186,7 @@ suite('Tracking',()=>{
                 
             })
 
-            test('subsequent hit with same hash sends email appropriately',()=>{
+            test('subsequent hit with different hash sends email appropriately',()=>{
                 let storageProvider = new MockRedisStorageProvider()
                 let token='someRandomToken'
                 let emailNotifier = new EmailNotifier();
