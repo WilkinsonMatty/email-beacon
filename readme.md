@@ -4,17 +4,17 @@ in the src attribute of an email <img> tag.
 
 Request a new token by calling the "getTracker" endpoint with a querystring containing the recipient's email address"
 
-Example:
+**Example:**
 
-https://localhost:3000/getTracker?emailAddress=firefox3@example.com
+`https://localhost:3000/getTracker?emailAddress=firefox3@example.com`
 
 This will return the raw token as a string. That token value can be used in the tracking URL, as in the following:
 
-https://localhost:3000/t/<token>
+`https://localhost:3000/t/<token>`
 
 e.g. you can embed the following in an email:
 
-<img src='https://localhost:3000/t/f8db3b5db0d3cd47ce5016dc14982f070b0bda1493d8c88628d98cc0a9771d7f3e684698c1974103dfa58920fd1fe573'></img>
+    <img src='https://localhost:3000/t/f8db3b5db0d3cd47ce5016dc14982f070b0bda1493d8c88628d98cc0a9771d7f3e684698c1974103dfa58920fd1fe573'></img>
 
 
 Each time the URL is accessed, the recipient email address will receive an email telling them...
@@ -33,7 +33,7 @@ Each time the tracking URL is accessed, the current request's fingerprint hash i
 
 
 
-Possible enhancements/features/things to investigate
+**Possible enhancements/features/things to investigate:**
 
 - set cookie on the off chance that the email client stores cookies. Matching cookie on a future request = definite match
 - add querystring to further prevent caching?
