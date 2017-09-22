@@ -1,0 +1,34 @@
+{
+  "name": "email-beacon",
+  "version": "1.0.0",
+  "description": "Tracks email opens and devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -u tdd",
+    "debug": "node --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilkinsonMatty/email-beacon.git"
+  },
+  "author": "Matty Wilkinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilkinsonMatty/email-beacon/issues"
+  },
+  "homepage": "https://github.com/WilkinsonMatty/email-beacon#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "express-fingerprint": "^1.1.1",
+    "fingerprintjs2": "^1.5.1",
+    "redis-mock": "^0.20.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-string": "^1.4.0",
+    "mocha": "^3.5.3",
+    "request": "^2.82.0",
+    "sinon": "^3.3.0"
+  }
+}
